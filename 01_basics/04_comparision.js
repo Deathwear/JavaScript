@@ -22,3 +22,4 @@ console.log(null >= 0);  //true  (because of equality and comparision works diff
 /* equality check == and comparisions > < >= <= work differently
 comparision convert null to a number, treating it as 0.
 that's why (3) null >=0 is true and (1)null > 0 is false.
+*/
