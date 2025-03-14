@@ -8,7 +8,7 @@
         Array, Objects, Functions
 
 
-    >>Javasctipt is Dynamically types language bcz variables don't needed to be declared  explicit data types.
+    >>Javascript is Dynamically types language bcz variables don't needed to be declared  explicit data types.
 
 */
 
@@ -22,7 +22,7 @@ const anotherId = Symbol('123')
 
 console.log(id == anotherId);  // gives false as same value of symbols are also unique
 
-const bigNumber = 3456543576654356754n   //last me n lgane se bigint repesent hojyega
+const bigNumber = 3456543576654356754n   //last me n lgane se bigint represent hojyega
 
 const heroes = ["shaktiman", "nagraj", "doga"]
 let myObj = {
@@ -39,7 +39,7 @@ const myFunction = function(){
 
 
 console.log(typeof bigNumber);
-console.log(typeof myFunction); //iska output functon hi aayega but it is called as object-function
+console.log(typeof myFunction); //iska output function hi aayega but it is called as object-function
 console.log(typeof heroes); //Output will be object but is called as function-object
 
 // link >> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof

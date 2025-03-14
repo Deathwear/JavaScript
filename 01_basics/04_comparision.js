@@ -18,8 +18,8 @@ console.log("02" > 1);   // this will return true in boolean format
 
 console.log(null > 0);   //false
 console.log(null == 0);  //false
-console.log(null >= 0);  //true  (because of equality and comparision works differently in JS)
-/* equality check == and comparisions > < >= <= work differently
-comparision convert null to a number, treating it as 0.
+console.log(null >= 0);  //true  (because of equality and comparison works differently in JS)
+/* equality check == and comparisons > < >= <= work differently
+comparison convert null to a number, treating it as 0.
 that's why (3) null >=0 is true and (1)null > 0 is false.
 */

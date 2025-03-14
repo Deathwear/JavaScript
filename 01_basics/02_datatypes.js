@@ -1,6 +1,6 @@
 "use strict"; // treat all JS code as newer version
 
-//alert("hello");  (this will give a alert popup on brwser side when working in devloper console for js) [we are using node.js not browser]
+//alert("hello");  (this will give a alert popup on browser side when working in developer console for js) [we are using node.js not browser]
 
 console.log(3 + 3);
 console.log("Aamir");    // code readability should be high

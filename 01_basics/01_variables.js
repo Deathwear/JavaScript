@@ -15,7 +15,7 @@ accountCity = "Delhi"
 
 //console.log(accountId);
 console.table([accountId, accountCity, accountEmail, accountPassword])  
-//console.table([]); will represent the all output in a table format as their indeces and values
+//console.table([]); will represent the all output in a table format as their indexes and values
 //here, accountId can not bed changed because it is a const. variable
 
 /* variables can be declared as let and var
