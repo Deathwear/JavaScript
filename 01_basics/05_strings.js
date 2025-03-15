@@ -42,6 +42,8 @@ console.log(gameName2.split("-"));
     split(separator)
     split(separator, limit)
 
+    link for split: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+
     TIPS: Use backticks syntax for writing strings
 */
 
