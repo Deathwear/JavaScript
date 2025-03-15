@@ -36,7 +36,7 @@ console.log(Math.random());  //output will be between 0 to 1
 console.log((Math.random()*10) + 1); //output will be between 1 to 10
 console.log(Math.floor(Math.random()*10) + 1); //round-off to the lowest integral value
 
-// random no. b/w any two number can be explained as:
+// random no. b/w any two  number can be explained as:
 const min = 10
 const max = 20
 console.log(Math.floor(Math.random() * (max - min + 1)) + min)
