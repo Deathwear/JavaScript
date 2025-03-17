@@ -1,41 +1,38 @@
 // 6th lecture of Chai aur code (Datatype conversion confusion)
 
 // here we try to convert the datatypes into number data type
-let score = "33abc"
+let score = "33abc";
 
 console.log(typeof score);
-console.log(typeof (score));
+console.log(typeof score);
 
-let valueInNumber = Number(score)
+let valueInNumber = Number(score);
 console.log(typeof valueInNumber);
-console.log(valueInNumber);  // it will give NaN (not a number) 
-// will give 0 in case of null 
-// NaN in case of undefined 
+console.log(valueInNumber); // it will give NaN (not a number)
+// will give 0 in case of null
+// NaN in case of undefined
 // in boolean, it will convert 1 for true & 0 for false
-// support string which can not be converter like "aamir" then it will give NaN 
+// support string which can not be converter like "aamir" then it will give NaN
 
-
-let isLoggedIn = 1
+let isLoggedIn = 1;
 let booleanIsLoggedIn = Boolean(isLoggedIn);
 console.log(booleanIsLoggedIn);
 
-// 1 is coverted into true
+// 1 is converted into true
 // 0 is converter false
 // empty string is converted to false
 // any string like "aamir" will be converted to true
 
-let someNumber = 33
+let someNumber = 33;
 let stringNumber = String(someNumber);
 console.log(stringNumber);
 console.log(typeof stringNumber);
 
-
-
 // *************** lecture 7 **************************
 // *************** Operation **************************
 
-let value =3
-let negValue = -value
+let value = 3;
+let negValue = -value;
 console.log(negValue);
 
 /* 
@@ -47,30 +44,27 @@ console.log(2/3);
 console.log(2%3);
 */
 
-let str1 = "Hello"
-let str2 = " Aamir"
-let str3 = str1 + str2
+let str1 = "Hello";
+let str2 = " Aamir";
+let str3 = str1 + str2;
 console.log(str3); // this will add up the strings
 
-
-console.log("1" + 2);  //12
-console.log(1+ "2");   // 12
+console.log("1" + 2); //12
+console.log(1 + "2"); // 12
 console.log("1" + 2 + 2); // 122
-console.log(1 + 2 + "2");  // 32
-console.log(3 + 4 * 5 % 3);  // this is only useful in exams not in writing code
+console.log(1 + 2 + "2"); // 32
+console.log(3 + ((4 * 5) % 3)); // this is only useful in exams not in writing code
 
 // operation will be done on the basis which datatype is coming first
 
 console.log(+true);
 console.log(+"");
 
+let num1, num2, num3;
+num1 = num2 = num3 = 2 + 2;
 
-let num1, num2, num3
-num1 = num2 = num3 = 2 + 2
-
-
-let gameCounter = 100
-gameCounter++;  //prefix and postfix operator
+let gameCounter = 100;
+gameCounter++; //prefix and postfix operator
 console.log(gameCounter);
 
 //prefix and postfix operator

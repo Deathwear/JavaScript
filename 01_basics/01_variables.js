@@ -1,7 +1,7 @@
-const accountId = 144553
-let accountEmail = "aamir@google.com"
-var accountPassword = "12345"
-accountCity = "Araria"
+const accountId = 144553;
+let accountEmail = "aamir@google.com";
+var accountPassword = "12345";
+accountId = "Araria";
 
 //const, let, var:
 //we try to change all values
@@ -9,12 +9,12 @@ accountCity = "Araria"
 
 //accountId = 2   // this change is not allowed
 
-accountEmail = "ar@gmail.com"
-accountPassword = "2345"
-accountCity = "Delhi"
+accountEmail = "ar@gmail.com";
+accountPassword = "2345";
+accountId = "Delhi";
 
 //console.log(accountId);
-console.table([accountId, accountCity, accountEmail, accountPassword])  
+console.table([accountId, accountId, accountEmail, accountPassword]);
 //console.table([]); will represent the all output in a table format as their indexes and values
 //here, accountId can not bed changed because it is a const. variable
 
