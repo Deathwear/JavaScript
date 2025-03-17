@@ -1,3 +1,6 @@
+# **README file for the notes of object in JavaScript**
+
+````markdown
 # **JavaScript Objects and Operations**
 
 This repository provides a comprehensive guide on JavaScript objects, their properties, and operations, complete with syntax examples.
@@ -13,23 +16,24 @@ Objects in JavaScript are collections of key-value pairs. They are used to store
 ```javascript
 const example = { name: "Aamir", age: 30 };
 ```
+````
 
 ---
 
 ## **Table of Contents**
 
-1. Object Creation
-2. Adding Properties
-3. Accessing Properties
-4. Updating Properties
-5. Deleting Properties
-6. Iterating Through an Object
-7. Checking Properties
-8. Cloning Objects
-9. Merging Objects
-10. Object Freezing and Sealing
-11. Object Destructuring
-12. Advanced Operations
+1. [Object Creation](#1-object-creation)
+2. [Adding Properties](#2-adding-properties)
+3. [Accessing Properties](#3-accessing-properties)
+4. [Updating Properties](#4-updating-properties)
+5. [Deleting Properties](#5-deleting-properties)
+6. [Iterating Through an Object](#6-iterating-through-an-object)
+7. [Checking Properties](#7-checking-properties)
+8. [Cloning Objects](#8-cloning-objects)
+9. [Merging Objects](#9-merging-objects)
+10. [Object Freezing and Sealing](#10-object-freezing-and-sealing)
+11. [Object Destructuring](#11-object-destructuring)
+12. [Advanced Operations](#12-advanced-operations)
 
 ---
 
@@ -229,6 +233,30 @@ const { key1, key2 } = obj;
   ```javascript
   const obj = Object.fromEntries([["key", "value"]]);
   ```
+
+---
+
+### **Common Errors and Handling**
+
+- **Accessing Non-existent Properties:**
+
+  ```javascript
+  console.log(obj.nonExistent); // undefined
+  ```
+
+- **Modifying Frozen Objects:**
+
+  ```javascript
+  Object.freeze(obj);
+  obj.newKey = "newValue"; // Error in strict mode
+  ```
+
+---
+
+### **Further Reading**
+
+- [MDN Web Docs: Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
+- [JavaScript.info: Objects](https://javascript.info/object)
 
 ---
 
