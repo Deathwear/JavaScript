@@ -1,6 +1,3 @@
-# **README file for the notes of object in JavaScript**
-
-````markdown
 # **JavaScript Objects and Operations**
 
 This repository provides a comprehensive guide on JavaScript objects, their properties, and operations, complete with syntax examples.
@@ -16,7 +13,6 @@ Objects in JavaScript are collections of key-value pairs. They are used to store
 ```javascript
 const example = { name: "Aamir", age: 30 };
 ```
-````
 
 ---
 
