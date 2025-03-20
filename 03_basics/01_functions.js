@@ -45,3 +45,41 @@ function loginUserMessage(username) {
 
 console.log(loginUserMessage("Aamir"));
 console.log(loginUserMessage());
+
+//------- lec: 20 (function with objects and array) ------
+
+function calculateCartPrice(val1, val2, ...num1) {
+  return num1;
+}
+
+//console.log(calculateCartPrice(200, 400, 500, 2000));
+
+const user = {
+  username: "hitesh",
+  price: 199,
+};
+
+function handleObject(anyobject) {
+  console.log(
+    `Username is ${anyobject.username} and price is ${anyobject.price} `
+  );
+}
+
+handleObject(user); //calling function
+handleObject({
+    username:"sam",
+    price: 399
+})
+
+
+
+//----------- function with array ---------------
+
+const myNewArray = [200, 400, 100, 600]
+function returnSecondValue(getArray) {
+    return getArray[1]
+}
+console.log(returnSecondValue(myNewArray));  //passing through variables
+console.log(returnSecondValue([200, 300, 500, 1000])); //direct passing
+
+
