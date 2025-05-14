@@ -10,7 +10,7 @@ This repository contains my personal notes and code examples from following the 
 
 I've been learning JavaScript by working through their comprehensive playlist. You can find it here:
 
-[Chai Aur Code JavaScript Playlist](https://www.youtube.com/playlist?list=PLu71SKxNBAj7rR4b5j3v2-yNlY65eQy65)
+[Chai Aur Code JavaScript Playlist](https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37)
 
 * **`notes/`**: This directory contains markdown files with my notes on various JavaScript topics covered in the playlist.
 * **`code/`**: This directory contains the code examples I wrote while following along with the tutorials. The code is organized into subdirectories corresponding to the topics covered.
