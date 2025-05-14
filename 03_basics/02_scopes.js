@@ -9,10 +9,26 @@ if (true) {
   console.log("INNER: ", a);
 }
 
-for (let i = 0; i < array.length; i++) {
-  const element = array[i];
-}
-
-console.log(a);
+//console.log(a);
 //console.log(b);
 //console.log(c);
+
+//------ lec:22 (scope & mini-hoisting) ------
+
+
+function one() {
+    const username = "aamir"
+    console.log("one is executed");
+    
+
+    function two() {
+        const website = "youtube"
+        console.log(username);
+        
+    }
+    //console.log(website);
+    two()
+    
+}
+
+one()
