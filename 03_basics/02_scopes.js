@@ -32,6 +32,3 @@ function one() {
 }
 
 one()
-//hello
-
-
