@@ -3,7 +3,7 @@
 (function() {
     console.log("I am an IIFE");
 })();
-// This function is executed immediately after it is defined, and it does not pollute the gl obal scope. IIFE is often used to create a private scope for variables and functions, preventing them from being accessible from the global scope. This is particularly useful in JavaScript to avoid variable name conflicts and to encapsulate functionality.
+// This function is executed immediately after it is defined, and it does not pollute the global scope. IIFE is often used to create a private scope for variables and functions, preventing them from being accessible from the global scope. This is particularly useful in JavaScript to avoid variable name conflicts and to encapsulate functionality.
 // Example of using IIFE to create a private scope:
 (function() {
     let privateVariable
