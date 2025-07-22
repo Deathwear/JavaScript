@@ -6,10 +6,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM | Chai Aur Code</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #ffff;
+        }
+    </style>
   </head>
-  <body style="background-color: #212121; color: #ffff">
+  <body>
     <div class="header">
-        <!-- comment to check in the parent.childNodes (parent is a stored variable of a class named header) -->
+      <!-- comment to check in the parent.childNodes (parent is a stored variable of a class named header) -->
       <div class="day">Monday</div>
       <div class="day">Tuesday</div>
       <div class="day">Wednesday</div>
@@ -36,13 +42,10 @@
       console.log(dayOne.parentElement);
       console.log(dayOne.nextElementSibling);
 
-
-    //    ----- IMPORTANT ----------
+      //    ----- IMPORTANT ----------
       console.log("NODES: ", parent.childNodes); //we have created a const as parent of which we are getting child nodes
       console.log("CHILDREN: ", parent.children); //childNodes returns all nodes, including text nodes, while children returns only element nodes
-    //  ---------------------------
-
-
+      //  ---------------------------
     </script>
   </body>
 </html>
