@@ -1,0 +1,48 @@
+<!-- lec(33): Creating a new Elements -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM | Chai Aur Code</title>
+  </head>
+  <body style="background-color: #212121; color: #ffff">
+    <div class="header">
+        <!-- comment to check in the parent.childNodes (parent is a stored variable of a class named header) -->
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+    </div>
+    <script>
+      const parent = document.querySelector(".header");
+      //creating nodelist on console
+      //   console.log(parent);
+      //   console.log(parent.children);
+      //   console.log(parent.children[1].innerHTML);
+
+      for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML);
+      }
+
+      // Traversing through the nodelist on console
+      parent.children[1].style.color = "orange";
+      console.log(parent.firstElementChild);
+      console.log(parent.lastElementChild);
+
+      const dayOne = document.querySelector(".day"); //day is a class
+      console.log(dayOne);
+      console.log(dayOne.parentElement);
+      console.log(dayOne.nextElementSibling);
+
+
+    //    ----- IMPORTANT ----------
+      console.log("NODES: ", parent.childNodes); //we have created a const as parent of which we are getting child nodes
+      console.log("CHILDREN: ", parent.children); //childNodes returns all nodes, including text nodes, while children returns only element nodes
+    //  ---------------------------
+
+
+    </script>
+  </body>
+</html>
