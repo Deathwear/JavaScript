@@ -1,0 +1,141 @@
+<!-- -----------------lecture 31& 32:  DOM Manipulation ------------
+ 
+video link: https://www.youtube.com/watch?v=Ab6K57WjWTE&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=35&t=13s&ab_channel=ChaiaurCode 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Learning</title>
+    <style>
+      .bg-black {
+        background-color: #212121;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div>
+      <h1 id="title" class="heading">DOM learning on Chai aur Code <span style="display: none;">test text</span></h1>
+      <h2>Lorem, ipsum dolor static.</h2>
+      <h2>Lorem, ipsum dolor static.</h2>
+      <h2>Lorem, ipsum dolor static.</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <input type="password" name="password" id="password" placeholder="Enter your password" />
+
+      <ul>
+        <li class="list-item">one</li>
+        <li class="list-item">two</li>
+        <li class="list-item">three</li>
+        <li class="list-item">four</li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+<!-- DOM Manipulation
+This HTML document is a simple example of how to structure a webpage using the Document Object Model (DOM). It includes a black background div, a main heading, and a paragraph of placeholder text. The DOM allows for dynamic manipulation of the content and structure of the webpage using JavaScript, enabling interactive web applications.
+-->
+<!-- Lec 31&32 (DOM selectors, Nodelist and HTMLCollection) -->
+
+<!--
+# DOM Selectors
+DOM selectors are methods used to select elements from the DOM tree. They allow developers to access and manipulate HTML elements dynamically. Common selectors include:
+- `document.getElementById("id")`: Selects an element by its ID.
+- `document.getElementsByClassName("class")`: Selects all elements with a specific class name (returns an HTMLCollection).
+- `document.getElementsByTagName("tag")`: Selects all elements with a specific tag name (returns an HTMLCollection).
+- `document.querySelector("selector")`: Selects the first element that matches a CSS selector.
+- `document.querySelectorAll("selector")`: Selects all elements that match a CSS selector (returns a NodeList).
+
+# Nodelist and HTMLCollection
+Nodelist and HTMLCollection are two types of collections returned by DOM selectors.
+- **NodeList**: A collection of nodes (elements) that can be returned by methods like `querySelectorAll()`. It is a static collection, meaning it does not automatically update when the DOM changes. NodeLists can be iterated over using forEach().
+- **HTMLCollection**: A collection of HTML elements returned by methods like `getElementsByClassName()` and `getElementsByTagName()`. HTMLCollections are live collections, meaning they automatically update when the DOM changes. However, they do not have all the array methods available.
+
+
+
+# DOM Properties: `.innerHTML`, `.innerText`, and `.textContent`
+These properties are used to access and manipulate the content of HTML elements in different ways.
+## `.innerHTML`
+- **Definition**: Returns the HTML content of an element, including any child elements.
+- **Usage**: Can be used to get or set the HTML content.
+- **Example**:
+  ```js
+  const content = document.getElementById("box").innerHTML;
+  document.getElementById("box").innerHTML = "<strong>Hello!</strong>";
+  ```
+## `.innerText`
+- **Definition**: Returns the visible text content of an element, excluding any HTML tags.
+- **Usage**: Useful for getting text as it appears to the user, ignoring hidden elements.
+- **Example**:
+  ```js
+  const text = document.getElementById("box").innerText;
+  document.getElementById("box").innerText = "Hello!";
+  ```
+## `.textContent`
+- **Definition**: Returns the text content of an element, including hidden elements, but without any HTML tags.
+- **Usage**: Similar to `.innerText`, but includes text from hidden elements.
+- **Example**:
+  ```js
+  const content = document.getElementById("box").textContent;
+  document.getElementById("box").textContent = "Hello!";
+  ```
+-->
+
+<!--                                       WORKING ON CONSOLE
+
+
+read.js:2530 READ - Host validation failed: {hostName: '', hostType: undefined}
+content.js:2524 Host is not supported
+content.js:2526 Host is not valid or supported
+content.js:2526 Host is not in insights whitelist
+document.querySelectorAll('li')
+NodeList(3) [li, li, li]
+const myLiList = document.querySelectorAll('li')
+undefined
+myLiList
+NodeList(3) [li, li, li]
+myLiList[0].style.color = 'Green'
+'Green'
+const myH1 = document.querySelectorAll('h1')
+undefined
+
+
+myLiList.forEach(function(l) {
+    l.style.backgroundColor = 'green'
+})
+VM1305:1 Uncaught ReferenceError: myLiList is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1305:1
+const myLiList = document.querySelectorAll('li')
+undefined
+myLiList.forEach(function(l) {
+    l.style.backgroundColor = 'green'
+})
+undefined
+const myH1 = document.querySelectorAll('h1')
+undefined
+ myH1[0].style.color = 'red'
+'Red'
+myH1[0].style.fontSize = '20px'
+'20px'
+'20px'
+
+
+-----------------------------------------
+to convert HTMLCollection to Array  we can use Array.from() method
+// or use spread operator [...myLiList]
+// or use Array.prototype.slice.call(myLiList)
+
+for example:
+const myLiList = document.getElementsByClassName('list-item')
+const myLiArray = Array.from(myLiList)
+myLiArray.forEach(function(l) {
+    l.style.backgroundColor = 'green'
+    l.style.color = 'white'
+})
+
+
+-->
