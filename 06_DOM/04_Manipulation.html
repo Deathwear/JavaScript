@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM | Chain Aur Code</title>
+    <style>
+      body {
+        background-color: #212121;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="language">
+      <li>JavaScript</li>
+    </ul>
+  </body>
+  <script>
+    // function to add an element
+    function addLanguage(langName) {
+      const li = document.createElement("li");
+      li.innerHTML = `${langName}`; //this will traverse full tree
+      document.querySelector(".language").appendChild(li);
+    }
+    //adding element
+    addLanguage("python");
+    addLanguage("typescript");
+
+    // optimized approach
+    function addOptiLanguage(langName) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName)); // created textNode as given langName and then appended as a child of the list
+      document.querySelector(".language").appendChild(li); //li was already created and we append as child in the document by selecting the class = "language"
+    }
+    addOptiLanguage("golang"); // given langName = "golang" we perform the addOptiLanguage function
+
+    //---- EDITING ELEMENTS ----
+    const secondLang = document.querySelector("li:nth-child(2)"); //li:nt-child(2) will select the second list
+    // secondLang.innerHTML = "Mojo"
+    const newLi = document.createElement("li"); // creating new element as newLi and then replacing it with the secondLang
+    newLi.textContent = "Mojo";
+    secondLang.replaceWith(newLi);
+
+    // Editing another example
+    const anotherLang = document.querySelector("li:first-child");
+    anotherLang.outerHTML = "<li>Python </li>"; //directly changing the HTML file
+
+    //--- REMOVING ELEMENTS ---
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove();
+
+    //basically select krke variable me dalo ar usko change krdo ya fir (or) new variable bnalo usme new value assign krdo ar fir usko purane wale variable pe assign krdo
+  </script>
+</html>
