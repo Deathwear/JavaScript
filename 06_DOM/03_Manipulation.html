@@ -1,0 +1,32 @@
+<!-- lec(33): Creating Element named div and  then appending it to the body as its child -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM | Chai aur Code</title>
+    <style>
+      body {
+        background-color: #212121;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nothing written in the body but code will be executed through js -->
+  </body>
+  <script>
+    const div = document.createElement("div");
+    console.log(div);
+    div.className = "main";
+    div.id = Math.round(Math.random() * 10 + 1);
+    div.setAttribute("title", "generated title");
+    div.style.backgroundColor = "green";
+    div.style.padding = "12px";
+    // div.innerText = "Chai aur Code"
+    const addText = document.createTextNode("Chai aur Code");
+    div.appendChild(addText);
+    document.body.appendChild(div);
+  </script>
+</html>
