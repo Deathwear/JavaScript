@@ -1,0 +1,30 @@
+<!-- Qs. Create 3 divs with common class name - “box”. Access them & add some unique text to each of them.  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 02 | DOM Manipulation</title>
+</head>
+<body>
+    <div class="box">first div</div>
+    <div class="box">second div</div>
+    <div class="box">third div</div>
+</body>
+<script>
+    const divs = document.querySelectorAll(".box") //will use divs[0,1,2]
+    console.log(divs)
+    // divs[0].innerText = "unique text"
+    // divs[1].innerText = "another unique text"
+    // divs[2].innerText = "some unique text"
+
+    //using loops
+    for (let i = 0; i <divs.length ; i++) {
+        divs[i].innerText = `new unique text ${i}`
+    }
+
+
+</script>
+</html>
