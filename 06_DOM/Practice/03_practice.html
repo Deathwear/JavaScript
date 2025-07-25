@@ -1,0 +1,29 @@
+<!-- 
+Create a new button element. Give it a text “click me”, background color of red & text color of white. Insert the button as the first element inside the body tag. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice | DOM Manipulation</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    let newBtn = document.createElement("button");
+    newBtn.innerText = "Click Me !";
+    newBtn.style.backgroundColor = "red";
+    newBtn.style.color = "white";
+    document.querySelector("body").prepend(newBtn);
+
+</script>
+</html>
