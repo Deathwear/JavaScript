@@ -84,8 +84,14 @@ function displayMessage(message) {
 
 function endGame() {
   //ends the game
-  userInput = "";
+  // userInput = "";
   userInput.setAttribute("disabled", "");
+  submit.setAttribute("disabled", "");
+  lowOrHigh.innerHTML = `<h2>Game Over</h2>`;
+  p.classList.add("result");
+  p.innerHTML = `<h2>Random Number was ${randomNumber}</h2>`;
+  startOver.appendChild(p);
+  // create a new game button
   p.classList.add("button");
   p.innerHTML = `<h2 id="newGame">Start new Game </h2>`;
   startOver.appendChild(p);
@@ -95,6 +101,14 @@ function endGame() {
 
 function newGame() {
   //start the new game
+  // when user clicks on the new game button we reset the game
+  // by resetting the random number, previous guesses, number of guesses and enabling the user input field. 
+  // also we remove the previous guesses and remaining guesses from the screen.
+  // we also remove the start over message and append the new game button.
+  userInput.setAttribute("disabled", "");
+  submit.setAttribute("disabled", "");
+  remainingGuesses.innerHTML = "";
+
   const newGameButton = document.querySelector("#newGame");
   newGameButton.addEventListener("click", function (e) {
     randomNumber = parseInt(Math.random() * 100 + 1);
@@ -103,7 +117,7 @@ function newGame() {
     guessSlot.innerHTML = "";
     remainingGuesses.innerHTML = `${11 - numGuess}`;
     userInput.removeAttribute("disabled", "");
-    startOver.removeChild(p);
+    startOver.removeChild(p)
     playGame = true;
   });
 }
