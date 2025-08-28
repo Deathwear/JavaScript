@@ -2,13 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic-Tac-Toe Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
+    <nav>
+        <a href="../index.html" aria-current="page">Home</a>
+        <a target="_blank" rel="noopener" href="https://github.com/Deathwear">Github Profile</a>
+    </nav>
     <div class="msg-container hide">
         <p id="msg">Winner</p>
         <button class="new-btn">New Game</button>
@@ -17,15 +22,15 @@
         <h1>Tic Tac Toe Game</h1>
         <div class="container">
             <div class="game">
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
+                <button class="box" aria-label="grid position 1"></button>
+                <button class="box" aria-label="grid position 2"></button>
+                <button class="box" aria-label="grid position 3"></button>
+                <button class="box" aria-label="grid position 4"></button>
+                <button class="box" aria-label="grid position 5"></button>
+                <button class="box" aria-label="grid position 6"></button>
+                <button class="box" aria-label="grid position 7"></button>
+                <button class="box" aria-label="grid position 8"></button>
+                <button class="box" aria-label="grid position 9"></button>
             </div>
         </div>
         <button id="reset-btn">Reset Game</button>
